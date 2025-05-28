@@ -1,0 +1,349 @@
+/* public/css/app.css */
+
+/* Thiết lập màu chủ đạo */
+body {
+    background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+    color: #333; /* Màu chữ chính */
+    font-family: Arial, sans-serif; /* Font chữ chính */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.hero {
+    background-color: #52b3a8; /* Màu nền của hero section */
+    color: #fff; /* Màu chữ trong hero section */
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #52b3a8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero a:hover {
+    background-color: #52b3a8;
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #fff; /* Màu nền dropdown menu */
+}
+
+.dropdown-item {
+    color: #333; /* Màu chữ trong dropdown items */
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 20px;
+}
+
+/* Responsive styling for list items */
+@media (max-width: 768px) {
+    ul.list-unstyled li {
+        width: 100%; /* Trình bày theo chiều rộng đầy đủ trên thiết bị nhỏ hơn 768px */
+    }
+}
+
+.posts-list {
+    list-style: none; /* Ẩn dấu chấm của danh sách bài đăng */
+    padding: 0;
+}
+
+.post-item {
+    border-bottom: 1px solid #ddd; /* Đường viền phân chia giữa các bài đăng */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post-item img {
+    max-width: 150px;
+    border-radius: 5px;
+} /* Phần danh sách bài đăng */
+
+.posts-list {
+    list-style: none; /* Ẩn dấu chấm của danh sách */
+    padding: 0;
+}
+
+.post-item {
+    border-bottom: 1px solid #ccc; /* Đường viền phân chia giữa các bài đăng */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post-item img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.post-item .post-content {
+    flex: 1; /* Chia tỷ lệ linh hoạt cho phần nội dung */
+}
+
+.post-item .post-title {
+    font-weight: bold;
+}
+
+.post-item .author {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post-item .actions {
+    margin-top: 10px;
+}
+
+/* Nút chỉnh sửa và xóa */
+.post-item .actions a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Nút xóa */
+.post-item .actions form {
+    display: inline;
+}
+/* CSS cho danh sách người dùng */
+
+.users-list {
+    list-style: none; /* Ẩn dấu chấm của danh sách */
+    padding: 0;
+}
+
+.user-item {
+    border-bottom: 1px solid #ccc; /* Đường viền phân chia giữa các người dùng */
+    padding: 10px 0;
+}
+
+.user-item .role {
+    color: #666; /* Màu sắc cho vai trò người dùng */
+    margin-left: 10px;
+}
+
+.user-item .btn {
+    margin-left: 10px; /* Khoảng cách giữa nút Xóa và thông tin người dùng */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+button[type="submit"]:hover {
+    background-color: #449081;
+}
+
+.nav-item a {
+    color: #52b3a8;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post-info {
+    margin-bottom: 15px;
+}
+
+.comments-section {
+    margin-top: 30px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-button {
+    padding: 12px 20px;
+    background-color: #52b3a8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #449081;
+}
+.actions {
+    display: flex;
+}
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CSS cho mỗi mục danh mục */
+.category-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+/* CSS cho thông tin của danh mục */
+.category-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS cho tên danh mục */
+.category-name {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* CSS cho các nút hành động */
+.category-actions .btn {
+    margin-right: 5px;
+}
+
+/* CSS cho nút Edit */
+.btn-primary {
+    background-color: #52b3a8;
+    color: #fff;
+}
+
+/* CSS cho nút Delete */
+.btn-danger {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+.h-400{
+    height: 400px;
+}
+/* Custom styles for My Account page */
+
+.card {
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 16px;
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.user-info strong {
+    font-weight: bold;
+}
+
+.user-info span {
+    color: #6c757d;
+}
+
+.role {
+    font-style: italic;
+    color: #28a745;
+}
+
+.action-btn {
+    margin-top: 20px;
+}
+
+.action-btn a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.action-btn a:hover {
+    text-decoration: underline;
+}
+.w-15{
+    width: 15%;
+}.w-85{
+    width: 85%;
+}
+.page-link{
+    border: none;
+}
+.h-150{
+    height: 150px;
+}
+.contact-image{
+    max-width: 100%;
+}
